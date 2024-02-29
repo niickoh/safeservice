@@ -1,0 +1,391 @@
+<section id="topbar" class="d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">{{correo}}</a></i>
+      <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{telefono}}</span></i>
+    </div>
+    <div class="social-links d-none d-md-flex align-items-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1 class="logo"><a href="index.html">SafeService<span>.</span></a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto btn-nav" routerLink="/home">Home</a></li>
+        <li><a class="nav-link scrollto btn-nav" (click)="scrollToPortfolio('about')">¿Quiénes Somos?</a></li>
+        <li><a class="nav-link scrollto btn-nav" (click)="scrollToPortfolio('featured-services')">Servicios</a></li>
+        <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+        <li><a class="nav-link scrollto" (click)="scrollToPortfolio('contact')">Contacto</a></li>
+      </ul>
+      <i id="mobile-nav-toggle" class="bi bi-list mobile-nav-toggle" (click)="toggleMobileNav()"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+<section id="hero" class="d-flex align-items-center">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <h1>Bienvenido a <span>SafeService</span></h1>
+    <h2>Somos un equipo de profesionales dedicados con el objetivo de otorgar una asesoría integral.</h2>
+    <div class="d-flex">
+      <a href="#about" class="btn-get-started scrollto">¡Comienza con nosotros!</a>
+      <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+
+<main id="main">
+
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">Empresas contratistas en la Construcción y Agrícola</a></h4>
+            <p class="description">Los años de experiencia en ordenamientos tributarios y contables nos permite asesorar a 
+              contratistas del rubro construcción. Por un pago mensual mantenemos actualizado el libro de compra-venta, 
+              generamos y gestionamos los pagos mensuales del formulario F29 (IVA) de tu empresa como también la 
+              liquidación de sueldo de tus empleados.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title"><a href="">Iniciación de Actividades ante el SII</a></h4>
+            <p class="description">Los contribuyentes que inicien actividades económicas (profesionales independientes, comerciales, 
+              industriales, etc.) deben dar aviso del inicio de actividades ante el Servicio de lmpuestos Internos (SII). 
+              Asesoramos a nuestros clientes durante todo el proceso.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bx-analyse"></i></div>
+            <h4 class="title"><a href="">Operación Renta</a></h4>
+            <p class="description">Cada año surgen dudas en las pequeñas empresas en la operación renta. 
+              ¿Cuáles son los plazos? ¿En qué se diferencian los sistemas de tributación? 
+              ¿Cuáles son los formularios asociados al proceso? Todas estas dudas te las podemos aclarar.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bxs-building"></i></div>
+            <h4 class="title"><a href="">Creación de Empresa</a></h4>
+            <p class="description">Somos especialistas en creación de empresas, modificación, disolución, etc. 
+              Crear una empresa puede ser un proyecto apasionante pero también abrumador si no sabes dónde empezar.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bx-user-check"></i></div>
+            <h4 class="title"><a href="">Recursos Humanos</a></h4>
+            <p class="description">Liquidaciones de Sueldo, Contrato de Trabajo, F30 Y F30-1, Imposiciones, carta a la inspección, 
+              representación en los distintos departamentos del estado, Reglamento Interno, ODIS, Finiquito, etc.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Featured Services Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>¿Quiénes Somos?</h2>
+        <h3>Conoce <span>Quienes Somos</span></h3>
+        <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <h3>Somos SafeService</h3>
+          <p class="fst-italic">
+            
+            Es un equipo de profesionales dedicados a las asesorías contables y tributarias para medianas y pequeñas empresas.
+          </p>
+          <p>
+            Con más de 15 años de trayectoria en el área contable, legal, financiera y tributaria; 
+            nuestro objetivo es otorgar a los clientes, una asesoría integral en todas las etapas del 
+            desarrollo de su negocio o empresa, desde la formación de la misma hasta la realización de cambios o términos de giro.
+          </p>
+          <ul>
+            <li class="d-flex">
+              <i class="bx bx-store-alt"></i>
+              <div>
+                <p></p>
+                <h5>Atendemos a empresas y negocios de todo el país.</h5>
+                <!-- <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+
+  <!-- ======= Services Section ======= -->
+  <!-- <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Servicios</h2>
+        <h3>Revisa <span>Nuestros Servicios</span></h3>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-store"></i></div>
+            <h4><a href="">Almacenes de Chile</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+  <!-- End Services Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contacto</h2>
+        <h3><span>Contáctanos</span></h3>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>Ubicación</h3>
+            <p>Pacheco Altamirano 2600, Puerto Montt, Los Lagos</p>
+            <p>Parque Brisas Norte, Colina, Región Metropolitana</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Nuestro Email</h3>
+            <p>{{correo}}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Hablemos</h3>
+            <p>{{telefono}}</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="col-12 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.8756895214724!2d-72.967992623237!3d-41.48529465265977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183bbf254f87c3%3A0x85849631f5d83d37!2sPacheco%20Altamirano%202600%2C%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1709162424685!5m2!1ses-419!2scl" [style]="{'width': '100%'}" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>       
+
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<footer id="footer">
+
+  <!-- <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>SafeService<span>.</span></h3>
+          <p>
+            Pacheco Altamirano 2600<br>
+            Puerto Montt, Los Lagos<br>
+            Chile <br><br>
+            <strong>Teléfono:</strong> {{telefono}}<br>
+            <strong>Email:</strong> {{correo}}<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Enlaces Útiles</h4>
+          <ul>
+            <li class="btn-nav"><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li class="btn-nav"><i class="bx bx-chevron-right"></i> <a (click)="scrollToPortfolio('about')">¿Quiénes Somos?</a></li>
+            <li class="btn-nav"><i class="bx bx-chevron-right"></i> <a (click)="scrollToPortfolio('featured-services')">Servicios</a></li>
+            <li class="btn-nav"><i class="bx bx-chevron-right"></i> <a (click)="scrollToPortfolio('contact')">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Empresas contratistas en la Construcción y Agrícola</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Iniciación de Actividades ante el SII</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Operación Renta</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Creación de Empresas</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Recursos Humanos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nuestras Redes Sociales</h4>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>SafeService</span></strong>. Todos los Derechos Reservados
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+      Creado por <a >Nicolás Catalán</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
