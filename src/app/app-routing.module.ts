@@ -5,7 +5,7 @@ const routes: Routes = [
   {path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},  
   {path: '', redirectTo:'home',pathMatch:'full'},
 ];
-//borrando el comentario
+//borrando el comentario desde develoop
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
