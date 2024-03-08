@@ -5,7 +5,7 @@ const routes: Routes = [
   {path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},  
   {path: '', redirectTo:'home',pathMatch:'full'},
 ];
-//borrando  asdasdasdASas
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
