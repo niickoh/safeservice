@@ -272,33 +272,34 @@
       <div class="row" data-aos="fade-up" data-aos-delay="100">
 
         <div class="col-12 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.8756895214724!2d-72.967992623237!3d-41.48529465265977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183bbf254f87c3%3A0x85849631f5d83d37!2sPacheco%20Altamirano%202600%2C%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1709162424685!5m2!1ses-419!2scl" [style]="{'width': '100%'}" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.8756895214724!2d-72.967992623237!3d-41.48529465265977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183bbf254f87c3%3A0x85849631f5d83d37!2sPacheco%20Altamirano%202600%2C%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1709162424685!5m2!1ses-419!2scl" [style]="{'width': '100%'}" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.895763995949!2d-72.95354452395269!3d-41.46317605128996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183b011f576855%3A0x7daf6e45c3fe9813!2sAv.%20Pdte.%20Ib%C3%A1%C3%B1ez%20731%2C%205500318%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1744513891334!5m2!1ses-419!2scl" [style]="{'width': '100%'}" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>       
 
       </div>
       <div class="row">
         <div class="col-12">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form [formGroup]="contactoForm" class="php-email-form">
             <div class="row">
               <div class="col form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" formControlName="nombre" placeholder="Ej: Juan Perez" required>
               </div>
               <div class="col form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" formControlName="email" placeholder="Ej: tuemail@gmail.com" required>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" formControlName="asunto" placeholder="Asunto" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="5" formControlName="mensaje" placeholder="Mensaje" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            <div class="text-center"><button type="submit" (click)="enviarMensaje()">Contáctanos</button></div>
           </form>
         </div>
       </div>
@@ -331,9 +332,10 @@
         <div class="col-lg-3 col-md-6 footer-contact">
           <h3>SafeService<span>.</span></h3>
           <p>
-            Pacheco Altamirano 2600<br>
+            &bull; Puerta Oriente 361, Puertas de Chicureo<br>
+            Torre C Piso 6 - Chicureo, Colina<br>            
+            &bull; Av. Presidente Ibañez 731<br>
             Puerto Montt, Los Lagos<br>
-            Chile <br><br>
             <strong>Teléfono:</strong> {{telefono}}<br>
             <strong>Email:</strong> {{correo}}<br>
           </p>
@@ -352,11 +354,11 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Nuestros Servicios</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Empresas contratistas en la Construcción y Agrícola</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Iniciación de Actividades ante el SII</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Operación Renta</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Creación de Empresas</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Recursos Humanos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a >Empresas contratistas en la Construcción y Agrícola</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a >Iniciación de Actividades ante el SII</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a >Operación Renta</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a >Creación de Empresas</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a >Recursos Humanos</a></li>
           </ul>
         </div>
 
@@ -364,11 +366,11 @@
           <h4>Nuestras Redes Sociales</h4>
           <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
           <div class="social-links mt-3">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
 

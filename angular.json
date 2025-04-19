@@ -37,7 +37,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/vendor/aos/aos.css"
+              "src/assets/vendor/aos/aos.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css"
             ],
             "scripts": [
             ]

@@ -19,8 +19,11 @@
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/router": "^17.2.0",
     "bootstrap": "^5.3.3",
+    "disable-devtool": "^0.3.8",
     "firebase": "^10.8.1",
     "jquery": "^3.7.1",
+    "ngx-spinner": "^19.0.0",
+    "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

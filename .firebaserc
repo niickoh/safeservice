@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "safeservice-a3dad"
+  },
+  "targets": {
+    "safeservice-a3dad": {
+      "hosting": {
+        "safeservicechile.cl": [
+          "safeservice-a3dad"
+        ]
+      }
+    }
   }
 }
